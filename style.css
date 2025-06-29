@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #1A237E;
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.header-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 1rem;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.header-subtitle {
+    font-size: 1rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Explore */
+.explore {
+    padding: 3rem 1rem;
+    background: #fff;
+}
+
+.explore-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.card-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+        -4px 0 6px rgba(0, 0, 0, 0.05),
+        4px 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.emoji {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.card h3 {
+    color: #1A237E;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: #444;
+    font-size: 0.95rem;
+}
+
+/* Color Classes */
+.card.blue {
+    background-color: #e3f2fd;
+}
+
+.card.teal {
+    background-color: #e0f2f1;
+}
+
+.card.red {
+    background-color: #ffcdd2;
+}
+
+.card.gray {
+    background-color: #f5f5f5;
+}
+
+/* Submit Section */
+.submit-section {
+    background-color: #1A237E;
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.submit-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.submit-container h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.submit-container p {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.submit-btn {
+    background-color: white;
+    color: #1A237E;
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.note {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* Responsive Breakpoints */
+@media (min-width: 600px) {
+    .header-title {
+        font-size: 2.5rem;
+    }
+
+    .header-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .header-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .header-title {
+        font-size: 3rem;
+    }
+
+    .header-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .submit-container h2 {
+        font-size: 2rem;
+    }
+}
+
+
+/* Section Base */
+.ethics-section {
+    background-color: #f9fafb;
+    padding: 3rem 1rem;
+}
+
+.ethics-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Header */
+.ethics-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1A237E;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+    max-width: 600px;
+    margin: 1.5rem auto 0;
+}
+
+/* Cards */
+.card-wrapper {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.info-card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.emoji {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.info-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1A237E;
+    margin-bottom: 0.5rem;
+}
+
+.info-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .info-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .info-card p {
+        font-size: 1rem;
+    }
+
+    .emoji {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* Section Container */
+.tata-values-section {
+    background-color: white;
+    padding: 3rem 1rem;
+}
+
+.tata-values-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Section Header */
+.tata-values-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1A237E;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+    max-width: 600px;
+    margin: 1.5rem auto 0;
+}
+
+/* Value Cards Grid */
+.values-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Card Design */
+.value-card {
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+        -4px 0 6px rgba(0, 0, 0, 0.05),
+        4px 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.value-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1A237E;
+    margin-bottom: 0.4rem;
+}
+
+.value-card p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #555;
+}
+
+.emoji {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Card Colors */
+.value-card.blue {
+    background-color: #e3f2fd;
+}
+
+.value-card.green {
+    background-color: #e8f5e9;
+}
+
+.value-card.yellow {
+    background-color: #fffde7;
+}
+
+.value-card.purple {
+    background-color: #f3e5f5;
+}
+
+.value-card.red {
+    background-color: #ffebee;
+}
+
+/* Responsive Breakpoints */
+@media (min-width: 600px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .values-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .values-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .value-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .value-card p {
+        font-size: 1rem;
+    }
+
+    .emoji {
+        font-size: 2.5rem;
+    }
+}
+
+/* Section */
+.quote-section {
+    background-color: #f3f4f6;
+    /* Tailwind's gray-100 */
+    padding: 3rem 1rem;
+}
+
+/* Container */
+.quote-container {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+/* Quote Box */
+.quote-box {
+    background-color: #E8EAF6;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Quote Text */
+.quote-text {
+    color: #1A237E;
+    font-size: 1.25rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+    .quote-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .quote-container {
+        max-width: 900px;
+    }
+
+    .quote-text {
+        font-size: 1.75rem;
+    }
+}
